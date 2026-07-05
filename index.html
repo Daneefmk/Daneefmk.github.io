@@ -22,6 +22,34 @@ scroll-behavior:smooth;
 }
 
 body{
+    background:#050505;
+    color:white;
+    padding-top:70px;
+}
+  #loader{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#050505;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+#loader h1{
+  color:#FFD700;
+  font-size:36px;
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+  0%{opacity:.4;transform:scale(.95);}
+  50%{opacity:1;transform:scale(1.05);}
+  100%{opacity:.4;transform:scale(.95);}
+}
 background:#050505;
 color:white;
 padding-top:70px;
@@ -221,39 +249,20 @@ margin-top:40px;
 
 <body>
 
-<nav>
-<a href="#about">About</a>
-<a href="#gallery">Gallery</a>
-<a href="#music">Music</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<header>
-
-<div class="hero">
-
-<h1>DANEEF MK</h1>
-
-<h2>Independent Artist</h2>
-
-<p>
-I'm Daneef Mk from Northeast Manipur, India.
-Music is my passion and I create songs inspired by emotions,
-real-life experiences and memories.
-</p>
-
-<a class="btn"
-href="https://open.spotify.com/artist/1hQBuguCoekWLkgsCMIv2T">
-Spotify
-</a>
-
-<a class="btn"
-href="https://www.instagram.com/im_daneef">
-Instagram
-</a>
-
+<div id="loader">
+    <h1>Daneef MK</h1>
 </div>
 
+<nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a
+
+  <header>
+    <div class="hero">
+        ...
+    </div>
 </header>
 
 <section id="about">
@@ -358,6 +367,14 @@ Independent Artist • Official Website
 </p>
 
 </footer>
-  
+  <script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+    }, 2000);
+});
+</script>
+
 </body>
 </html>
+
