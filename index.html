@@ -6,6 +6,7 @@
 <title>Daneef Mk | Official Website</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -13,9 +14,36 @@ box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:#050505;
 color:white;
+padding-top:70px;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:25px;
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#FFD700;
 }
 
 header{
@@ -25,7 +53,7 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
 url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1600");
 background-size:cover;
 background-position:center;
@@ -37,7 +65,6 @@ color:#FFD700;
 }
 
 .hero h2{
-font-size:26px;
 margin:15px 0;
 font-weight:300;
 }
@@ -46,7 +73,6 @@ font-weight:300;
 max-width:700px;
 margin:auto;
 line-height:1.8;
-font-size:18px;
 }
 
 .btn{
@@ -58,11 +84,22 @@ color:black;
 text-decoration:none;
 font-weight:bold;
 border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.05);
 }
 
 section{
 padding:80px 20px;
 text-align:center;
+}
+
+section h1{
+color:#FFD700;
+margin-bottom:30px;
 }
 
 .gallery{
@@ -77,22 +114,48 @@ margin:auto;
 width:100%;
 border-radius:20px;
 transition:.4s;
+cursor:pointer;
 }
 
 .gallery img:hover{
 transform:scale(1.05);
 }
 
+.music{
+background:#111;
+border-radius:20px;
+max-width:900px;
+margin:auto;
+padding:30px;
+}
+
+.contact{
+background:#111;
+max-width:900px;
+margin:auto;
+padding:30px;
+border-radius:20px;
+}
+
 footer{
 padding:40px;
 text-align:center;
 background:#111;
+margin-top:40px;
 }
+
 </style>
 
 </head>
 
 <body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#music">Music</a>
+<a href="#contact">Contact</a>
+</nav>
 
 <header>
 
@@ -105,32 +168,42 @@ background:#111;
 <p>
 I'm Daneef Mk from Northeast Manipur, India.
 Music is my passion and I create songs inspired by emotions,
-real-life experiences, and memories.
+real-life experiences and memories.
 </p>
 
-<a class="btn" href="https://open.spotify.com/artist/1hQBuguCoekWLkgscMIv2T?si=O7NtF8yASx-GaqFMgmCFdQ">Spotify</a>
+<a class="btn"
+href="https://open.spotify.com/artist/1hQBuguCoekWLkgsCMIv2T">
+Spotify
+</a>
 
-<a class="btn" href="https://www.instagram.com/im_daneef?igsh=MWQyZHlmcTI5MzNodg==">Instagram</a>
+<a class="btn"
+href="https://www.instagram.com/im_daneef">
+Instagram
+</a>
 
 </div>
 
 </header>
 
-<section>
+<section id="about">
 
-<h1 style="color:#FFD700;margin-bottom:30px;">About Me</h1>
+<h1>About Me</h1>
 
 <p style="max-width:800px;margin:auto;font-size:18px;line-height:1.8;">
-Welcome to my official website.
+
+Welcome to my official website.<br><br>
+
 I'm Daneef Mk from Northeast Manipur, India.
+
 Thank you for supporting my music journey.
+
 </p>
 
 </section>
 
-<section>
+<section id="gallery">
 
-<h1 style="color:#FFD700;margin-bottom:40px;">Photo Gallery</h1>
+<h1>Photo Gallery</h1>
 
 <div class="gallery">
 
@@ -147,14 +220,75 @@ Thank you for supporting my music journey.
 </div>
 
 </section>
+<section id="music">
+
+<h1>Latest Song</h1>
+
+<div class="music">
+
+<h2>🎵 Angel Like You</h2>
+
+<p style="margin:20px 0;">
+Listen to my latest release on Spotify.
+</p>
+
+<a class="btn"
+href="https://open.spotify.com/artist/1hQBuguCoekWLkgsCMIv2T"
+target="_blank">
+Listen on Spotify
+</a>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h1>Contact</h1>
+
+<div class="contact">
+
+<p style="font-size:18px;line-height:1.8;">
+
+📍 Manipur, India
+
+<br><br>
+
+Follow me on social media and stay updated with my latest music.
+
+</p>
+
+<br>
+
+<a class="btn"
+href="https://www.instagram.com/im_daneef"
+target="_blank">
+Instagram
+</a>
+
+<a class="btn"
+href="https://open.spotify.com/artist/1hQBuguCoekWLkgsCMIv2T"
+target="_blank">
+Spotify
+</a>
+
+</div>
+
+</section>
 
 <footer>
 
-<h2>Daneef Mk</h2>
+<h2 style="color:#FFD700;">Daneef Mk</h2>
 
-<p>© 2026 All Rights Reserved</p>
+<p style="margin-top:15px;">
+Independent Artist • Official Website
+</p>
+
+<p style="margin-top:10px;">
+© 2026 Daneef Mk. All Rights Reserved.
+</p>
 
 </footer>
 
 </body>
-</html> 
+</html>
