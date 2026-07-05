@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daneefmk.github.io/sitemap.xml
