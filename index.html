@@ -10,80 +10,83 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-}
-
-body{
-background:#0d0d0d;
-color:white;
 font-family:Arial,sans-serif;
 }
 
+body{
+background:#050505;
+color:white;
+}
+
 header{
-padding:80px 20px;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-background:linear-gradient(to bottom,#000,#111);
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1600");
+background-size:cover;
+background-position:center;
 }
 
-h1{
-font-size:3.5rem;
-letter-spacing:4px;
+.hero h1{
+font-size:60px;
+color:#FFD700;
 }
 
-h2{
-margin-top:10px;
-color:#1DB954;
-font-weight:normal;
+.hero h2{
+font-size:26px;
+margin:15px 0;
+font-weight:300;
 }
 
-p{
+.hero p{
 max-width:700px;
-margin:20px auto;
-line-height:1.7;
+margin:auto;
+line-height:1.8;
 font-size:18px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 28px;
-margin:10px;
-background:#1DB954;
-color:white;
+margin:15px;
+padding:15px 35px;
+background:#FFD700;
+color:black;
 text-decoration:none;
-border-radius:30px;
 font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:#17a74a;
+border-radius:40px;
 }
 
 section{
-padding:60px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
-.card{
-max-width:800px;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1200px;
 margin:auto;
-background:#181818;
-padding:30px;
+}
+
+.gallery img{
+width:100%;
 border-radius:20px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
 }
 
 footer{
-padding:30px;
+padding:40px;
 text-align:center;
-background:#000;
-color:#aaa;
-}
-
-.social a{
-color:white;
-text-decoration:none;
-margin:10px;
-font-size:18px;
-display:inline-block;
+background:#111;
 }
 </style>
 
@@ -93,67 +96,53 @@ display:inline-block;
 
 <header>
 
+<div class="hero">
+
 <h1>DANEEF MK</h1>
 
-<h2>Independent Artist • Northeast India</h2>
+<h2>Independent Artist</h2>
 
 <p>
-Welcome to my official website.
-I'm Daneef Mk, an independent artist creating emotional music inspired by real-life experiences.
+I'm Daneef Mk from Northeast Manipur, India.
+Music is my passion and I create songs inspired by emotions,
+real-life experiences, and memories.
 </p>
 
-<a class="btn" href="https://open.spotify.com/" target="_blank">Listen on Spotify</a>
+<a class="btn" href="https://open.spotify.com/artist/1hQBuguCoekWLkgscMIv2T?si=O7NtF8yASx-GaqFMgmCFdQ">Spotify</a>
 
-<a class="btn" href="https://www.instagram.com/im_daneef" target="_blank">Instagram</a>
+<a class="btn" href="https://www.instagram.com/im_daneef?igsh=MWQyZHlmcTI5MzNodg==">Instagram</a>
+
+</div>
 
 </header>
 
 <section>
 
-<div class="card">
+<h1 style="color:#FFD700;margin-bottom:30px;">About Me</h1>
 
-<h2>Latest Release</h2>
-
-<h3>Angel Like You</h3>
-
-<p>
-Stream my latest music on Spotify and follow my journey.
+<p style="max-width:800px;margin:auto;font-size:18px;line-height:1.8;">
+Welcome to my official website.
+I'm Daneef Mk from Northeast Manipur, India.
+Thank you for supporting my music journey.
 </p>
-
-</div>
 
 </section>
 
 <section>
 
-<div class="card">
+<h1 style="color:#FFD700;margin-bottom:40px;">Photo Gallery</h1>
 
-<h2>About Me</h2>
+<div class="gallery">
 
-<p>
-Music is my way of expressing emotions that words cannot describe.
-Thank you for supporting my journey.
-</p>
+<img src="photo1.jpg">
 
-</div>
+<img src="photo2.jpg">
 
-</section>
+<img src="photo3.jpg">
 
-<section>
+<img src="photo4.jpg">
 
-<div class="card">
-
-<h2>Connect With Me</h2>
-
-<div class="social">
-
-<a href="https://www.instagram.com/im_daneef">Instagram</a>
-
-<a href="https://open.spotify.com/">Spotify</a>
-
-<a href="https://youtube.com/">YouTube</a>
-
-</div>
+<img src="photo5.jpg">
 
 </div>
 
@@ -161,7 +150,9 @@ Thank you for supporting my journey.
 
 <footer>
 
-© 2026 Daneef Mk. All Rights Reserved.
+<h2>Daneef Mk</h2>
+
+<p>© 2026 All Rights Reserved</p>
 
 </footer>
 
